@@ -1,0 +1,306 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*--------------START HEADER-----------*/
+
+header {
+    background-color: #CB6CE6;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: white;
+    font-style: oblique;    
+}
+
+.social-media {
+    display: flex;
+    align-items: start;
+    gap: 5px;
+}
+
+.social-media a {
+    font-size: 24px;
+}
+
+/*--------------FINISH HEADER-----------*/
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+main {
+    padding: 2rem;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9em;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.form-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-search {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    margin-right: 10px;
+}
+.products-grid a:link,
+.products-grid a:visited {
+    display: inline-block;
+    background-color: #C1FF72;
+    color: black;
+    text-decoration: none;
+    margin: 1rem 0;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.wrapper .products-grid .cake {
+    background-color: #CB6CE6;
+    color: black;
+    gap: 1rem;
+}
+.wrapper .products-grid .cupc {
+    background-color: #CB6CE6;
+    color: black;
+    gap: 1rem;
+}
+
+.wrapper .products-grid .cp {
+    background-color: #CB6CE6;
+    color: black;
+    gap: 1rem;
+}
+
+.content2 {
+    padding: 0.5rem;
+}
+section {
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 1rem;
+}
+
+.skip {
+    position: absolute;
+    top: auto;
+    overflow: hidden;
+    opacity: 0;
+    display: none;
+}
+.skip:focus {
+    position: static;
+    opacity: 1.5;
+}
+
+.display {
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+}
+
+.form-search {
+    display: flex; 
+}
+.display ul {
+    padding-left: 0;
+    text-align: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.display li {
+    display: inline-block;
+    width: 15%;
+}
+
+.display li a { 
+    padding: 15px;
+    text-decoration: none;
+    border: 2px solid #CB6CE6;
+    padding: 10px;
+}
+
+.search-input {
+    width: 200px;
+    
+}
+footer {
+    background-color: #CB6CE6;
+    color: black;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/*------------------CONTACT PAGE------------------ */
+#contactus {
+    background-color: #C1FF72;
+    max-width: 700px;
+    box-shadow: 0 0 2px black;
+    line-height: 1.4;
+    margin: 0 auto;
+}
+.formcontact {
+    padding: 1em;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+label {
+    font-size: 13px;
+}
+
+#yourname {
+    width: 650px;
+    height: 20px;
+}
+
+#youremail {
+    width: 650px;
+    height: 20px;
+}
+
+#yourmessage {
+    width: 650px;
+    height: 100px;
+}
+
+/*------------------CONTACT PAGE------------------ */
+
+@media screen and (min-width: 760px) {
+
+.wrapper-sm {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 1rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+    
+header nav ul li {
+    padding-bottom: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    list-style: none;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.products-grid a:link,
+.products-grid a:visited {
+    width: 70%;
+}
+
+.cake {
+    grid-column: 1/1;
+    padding: 1rem;
+}
+
+
+.cupc {
+    grid-column: 2/2;
+    padding: 1rem;
+}
+
+.cp {
+    grid-column: 3/3;
+    padding: 1rem;
+}
+
+}
+
+/*---------------ANIMATIONS---------------------*/
+html {
+    scroll-behavior: smooth;
+}
+
+.products-grid img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.products-grid img:hover {
+    transform: scale(1.1);
+}
+
+.btn {
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /* Sombra deseada */
+}
+
+footer {
+    transition: background-color 0.3s ease-in-out;
+}
+
+footer:hover {
+    background-color: #C1FF72;
+}
+
+/*---------------ANIMATIONS---------------------*/
+

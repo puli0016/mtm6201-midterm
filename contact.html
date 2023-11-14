@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <ul>
+                    <li><a href="index.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="#main" class="skip">Skip to Main content</a></li>
+                </ul>
+            </div>
+            <div class="social-media" >
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:puli0016@algonquinlive.com"><i class="fas fa-envelope"></i></a>            
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <section>
+            <div class="logo-container" >
+                <img class="logo" src="images/logo.png" alt="">
+            </div>
+        </section>
+        
+        <article class="display">
+            <ul>
+                <li><a href="index.html">PRODUCTS</a></li>
+                <li><a href="#Events">EVENTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+
+            <div class="form-container">
+                <form class="form-search">
+                    <input type="search" class="search-input" name="search" placeholder="search">
+                    <button class="search-button"><span class="material-icons">search</span></button>
+                </form>
+            </div>   
+        </article>
+
+        <article>
+            <h2>Contact us</h2>
+            <section id="contactus">
+                
+                <form class="formcontact" action="index.html" method="get">
+
+                    <div>
+                        <label for="yourname">Your Name</label>
+                        <div><input id="yourname" name="yname" type="text"></div>
+                    </div>
+
+                    <div>
+                        <label for="youremail">Your Email</label>
+                        <div><input id="youremail" name="yemail" type="text"></div>
+                    </div>
+
+                    <div>
+                        <label for="yourmessage">Your Message</label>
+                        <div><textarea name="yourmessage" id="yourmessage"></textarea></div>
+                    </div>
+                </form>
+
+                <button type="submit">Send</button>
+            </section>
+        </article>
+
+    </main>
+
+    <footer itemscope itemtype="https://schema.org/LocalBusiness" role="contentinfo">
+        <p itemprop="legalName">  © 2023, Moodfful Delights. All rights reserved.</p>
+          <p itemprop="address">
+              2065 Baseline Rd. Ottawa, ON K2G 6G4
+          </p>
+          <p itemprop="email">info@moodfuldelights.ca</p>
+          <p itemprop="telephone">Phone number: 438-680-3658</p>
+      </footer>
+  
+</body>
+</html>
